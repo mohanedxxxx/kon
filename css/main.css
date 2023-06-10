@@ -1,0 +1,151 @@
+:root {
+  --main-color: #439a97;
+  --sacund-color: #62b6b7;
+  --color-three: #97dece;
+  --color-four: #cbedd5;
+}
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: var(--color-three);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+/* start nav */
+nav {
+  background-color: var(--main-color);
+}
+nav img {
+  width: 10vw;
+  margin: 18px;
+  box-shadow: 0 0 10px #97dece;
+  border-radius: 50%;
+}
+nav .list i {
+  display: none;
+}
+nav .list ul {
+}
+nav ul a {
+  border: 2px solid black;
+  color: black;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+  margin-left: 40px;
+  padding: 10px;
+}
+nav ul a:last-child {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav ul a:hover {
+  color: #62b6b7;
+}
+@media (max-width: 767px) {
+  nav .list i {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 30px;
+  }
+  nav .list:hover ul {
+    display: block;
+  }
+  nav .list ul {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-four);
+    position: absolute;
+    right: 0;
+    min-width: 144px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+    border-radius: 10px;
+    text-align: center;
+  }
+  nav .list ul a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    font-size: 10%;
+    text-align: center;
+    margin: 13px;
+    box-shadow: 0 0 10px #ddd;
+  }
+  nav .list ul a:hover {
+    color: var(--sacund-color);
+  }
+  nav .list ul::before {
+    content: "";
+    border-width: 46px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: transparent;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    z-index: -1;
+  }
+}
+/* end nav */
+/* start header */
+header {
+  background-image: url(/media/cover.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 52vw;
+  position: relative;
+}
+header .cover {
+  background-color: #9c27b066;
+  background-size: cover;
+  width: 100vw;
+  height: 52vw;
+}
+header div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header h1 {
+  font-weight: 300;
+  animation: fadeInDown;
+  animation-duration: 3s;
+  font-size: 69px;
+  font-style: oblique;
+  margin: 0;
+}
+header p {
+  font-weight: 700;
+  font-size: 15px;
+  animation: fadeInDown;
+  animation-duration: 4s;
+}
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 31px;
+  }
+  header p {
+    margin-top: 5px;
+    font-size: 9px;
+  }
+}

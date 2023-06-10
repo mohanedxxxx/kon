@@ -1,0 +1,174 @@
+/*start box*/
+.flex {
+  display: flex;
+}
+.al-c {
+  align-items: center;
+}
+.sp-bt {
+  justify-content: space-between;
+}
+.row-r {
+  flex-direction: row-reverse;
+}
+.grid {
+  display: grid;
+}
+.gap-20 {
+  grid-gap: 20px;
+}
+.bl {
+  display: block;
+}
+@media (max-width: 767px) {
+  .bl-mobile {
+    display: block;
+  }
+  .hid-mobile {
+    display: none;
+  }
+}
+.shadow {
+  box-shadow: 0 0 10px #ddd;
+}
+/*end box*/
+/*start padding + margin*/
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.m-0 {
+  margin: 0;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.w-full {
+  width: 100%;
+}
+/*end padding + margin*/
+/*start color*/
+.bg-white {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: blue;
+}
+.c-white {
+  color: white;
+}
+.c-black {
+  color: black;
+}
+.c-blue {
+  color: #0075ff;
+}
+.c-alt-blue {
+  color: #0d69d5;
+}
+.c-orange {
+  color: #22c55e;
+}
+.c-red {
+  color: #f44336;
+}
+.c-gray {
+  color: #888;
+}
+
+/*end color*/
+/*start font*/
+.txt-c {
+  text-align: center;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fw-b {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+/*end font*/
+/*start position*/
+.relative {
+  position: relative;
+}
+/*end position*/
+/*start border*/
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.bo-1 {
+  border: 1px solid #ccc;
+}
+.b-none {
+  border: none;
+}
+/*end border*/
+/*start width + height*/
+.w-fit {
+  width: fit-content;
+}
+/*end   width + height*/
+/*start components*/
+.btw-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ce-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.ov {
+  overflow: hidden;
+}
+
+/*end components*/
